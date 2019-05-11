@@ -11,9 +11,9 @@ import (
 )
 
 type Rates struct {
-	Date  int    `json:"timestamp"`
-	Base  string `json:"base"`
-	Rates map[string]float64
+	Date  int                `json:"timestamp"`
+	Base  string             `json:"base"`
+	Rates map[string]float64 `json:"rates"`
 }
 
 const URL = "https://openexchangerates.org/api/latest.json?app_id=%s"
